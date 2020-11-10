@@ -1,30 +1,41 @@
-@import 'bootstrap/dist/css/bootstrap';
-
-.navbar {
-  text-align: center;
-  line-height: 50px !important;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding: 70px 25px;
 }
 
-.navbar-brand {
-  text-align: center;
-  color: aqua !important;
+.site-nav {
+  display: flex;
+  overflow-y: hidden;
+  align-items: flex-start;
+  height: 40px;
 }
 
-.gruvbox-dark {
-  background-color: #282828;
-  //color: #ebdbb2;
-  color: aqua !important;
+.site-nav-left {
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: auto;
 }
 
-.hack {
-  font-size: 1.2rem;
-  line-height: 22px;
+.site-nav-right {
+  align-items: flex-end;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: auto;
 }
 
-.nav-title {
-  font-size: 150%;
+.nav-items {
+  display: block;
+  padding: 5px;
 }
 
-ul {
-  list-style-type: disc;
+.separator-line {
+  display: flex;
+  border-bottom: 2px solid rgba(172, 182, 185, 0.35);
+  margin: auto;
 }
+
